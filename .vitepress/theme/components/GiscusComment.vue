@@ -13,32 +13,14 @@
       inputPosition="bottom"
       lang="zh-CN"
       loading="lazy"
+      :theme="isDark ? 'dark_tritanopia' : 'light_tritanopia'"
     />
   </div>
 </template>
 
 <script setup>
 import Giscus from "@giscus/vue";
-import { watch } from "vue";
-import { inBrowser, useData, useRoute } from "vitepress";
+import { useData } from "vitepress";
 
 const { isDark } = useData();
-const route = useRoute();
-
-watch(isDark, (dark) => {
-  if (!inBrowser) return;
-
-  const iframe = document
-    .querySelector("giscus-widget")
-    ?.shadowRoot?.querySelector("iframe");
-
-  iframe?.contentWindow?.postMessage(
-    {
-      giscus: {
-        setConfig: { theme: dark ? "dark_tritanopia" : "light_tritanopia" },
-      },
-    },
-    "https://giscus.app"
-  );
-});
 </script>
