@@ -1,15 +1,17 @@
 import { defineComponent, h } from "vue";
-import { useData } from "vitepress";
+import { useData, useRoute } from "vitepress";
 import Giscus from "@giscus/vue";
 
 export default defineComponent({
   name: "GiscusComment",
   render: () => {
     const { isDark } = useData();
+    const route = useRoute();
     return h(
       "div",
       { style: { marginTop: "2rem" } },
       h(Giscus, {
+        key: route.path,
         id: "comments",
         repo: "zimo493/docs",
         repoId: "R_kgDOO9pCvQ",
