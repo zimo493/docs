@@ -17,7 +17,7 @@ export default defineConfig({
           {
             name: "zimo493",
             username: "zimo493",
-            avatar: "https:gitee.com/zimo493.png",
+            avatar: "https://gitee.com/zimo493.png",
             links: [
               {
                 type: "github",
