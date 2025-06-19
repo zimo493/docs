@@ -12,7 +12,20 @@ export default defineConfig({
     plugins: [
       GitChangelog({
         // 填写在此处填写您的仓库链接
-        repoURL: () => "https://github.com/nolebase/integrations",
+        repoURL: () => "https://github.com/zimo493/docs",
+        mapAuthors: [
+          {
+            name: "zimo493",
+            username: "zimo493",
+            avatar: "https:gitee.com/zimo493.png",
+            links: [
+              {
+                type: "github",
+                link: "https://github.com/zimo493",
+              },
+            ],
+          },
+        ],
       }),
       GitChangelogMarkdownSection(),
     ],
