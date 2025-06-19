@@ -10,7 +10,9 @@ export const Theme: ThemeConfig = {
   extends: DefaultTheme,
   Layout: Layout,
   enhanceApp({ app }) {
-    app.use(NolebaseGitChangelogPlugin);
+    app.use(NolebaseGitChangelogPlugin, {
+      displayAuthorsInsideCommitLine: true,
+    });
   },
 };
 
