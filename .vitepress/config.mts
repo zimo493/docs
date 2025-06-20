@@ -48,9 +48,9 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
-    ],
+    // socialLinks: [
+    //   { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    // ],
 
     footer: {
       message: `基于 MIT 许可发布`,
