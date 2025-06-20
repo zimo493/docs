@@ -6,10 +6,10 @@ This page demonstrates some of the built-in markdown extensions provided by Vite
 
 <br/>
 <div style="display: flex; gap: 20px">
-  <img src="https://cn.vuejs.org/logo.svg" alt="Vue" width="100" >
-  <img src="https://vitepress.dev/vitepress-logo-large.svg" alt="Vitepress" width="100" >
-  <img src="https://chat.deepseek.com/favicon.svg" alt="DeepSeek" width="100">
-  <img src="https://pinia.vuejs.org/logo.svg" alt="Pinia" width="100">
+  <img src="https://cn.vuejs.org/logo.svg" alt="Vue" style="width: 100px;height: 100px;" >
+  <img src="https://vitepress.dev/vitepress-logo-large.svg" alt="Vitepress" style="width: 100px;height: 100px;" >
+  <img src="https://chat.deepseek.com/favicon.svg" alt="DeepSeek" style="width: 100px;height: 100px;">
+  <img src="https://pinia.vuejs.org/logo.svg" alt="Pinia" style="width: 100px;height: 100px;">
 </div>
 
 ## Syntax Highlighting
