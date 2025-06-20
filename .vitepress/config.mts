@@ -51,5 +51,10 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
+
+    footer: {
+      message: `基于 MIT 许可发布`,
+      copyright: `版权所有 © 2025-${new Date().getFullYear()}`,
+    },
   },
 });
