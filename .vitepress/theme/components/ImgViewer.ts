@@ -25,7 +25,10 @@ const findNearestHeading = (imgElement: HTMLElement | null) => {
 export const bindFancybox = () => {
   nextTick(async () => {
     const { Fancybox } = await import("@fancyapps/ui"); // 采用这种导入方式是为了避免构建报错问题
-    const imgs = document.querySelectorAll(".vp-doc img");
+    // 获取所有不在 a链接 中的图片元素
+    const imgs = Array.from(document.querySelectorAll(".vp-doc img")).filter(
+      (img) => !img.closest("a") // 检查 img 是否在任何层级的 <a> 内
+    );
     imgs.forEach((img) => {
       const image = img as HTMLImageElement;
       if (!image.hasAttribute("data-fancybox")) {

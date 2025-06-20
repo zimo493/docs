@@ -2,6 +2,16 @@
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.
 
+## ImgViewer
+
+<br/>
+<div style="display: flex; gap: 20px">
+  <img src="https://cn.vuejs.org/logo.svg" alt="Vue" width="100" >
+  <img src="https://vitepress.dev/vitepress-logo-large.svg" alt="Vitepress" width="100" >
+  <img src="https://chat.deepseek.com/favicon.svg" alt="DeepSeek" width="100">
+  <img src="https://pinia.vuejs.org/logo.svg" alt="Pinia" width="100">
+</div>
+
 ## Syntax Highlighting
 
 VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
