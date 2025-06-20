@@ -54,3 +54,7 @@ img[data-fancybox="gallery"] {
   width: auto;
   margin: auto;
 }
+
+.is-compact .fancybox__footer .fancybox__caption {
+  text-align: center;
+}
